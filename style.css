@@ -1,89 +1,61 @@
-body{
-	margin: 0;
-    padding: 0;
-    background: url(wood.jpg);	
-	background-size: cover;
-	background-position: center;
-	font-family: sans-serif;
-	
-}
- .loginbox{
-	width: 340px;
-	height: 520px;
-	background: #000;
-	color: #fff;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	box-sizing: border-box;
-	padding: 70px 30px;
-		
-}
-.images{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	position: absolute;
-	top: -50px;
-	left: calc(50%-50px);
-}
-h1{
-margin: 0;
-padding: 0 0 20px;
-text-align: center;
-font-size: 22px;
-}
-.loginbox p{
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-}
-.loginbox input{
-	width: 100%;
-	margin-bottom: 20px;
-}
-.loginbox input[type="text"], input[type="password"]
-{
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline: none;
-	height: 40px;
-	color: #fff;
-	font-size: 16px;
-		
-}
-.loginbox input[type="submit"]
-{
-	border: none;
-	outline: none;
-	height: 40px;
-	background: #fb2525;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 20px;
-	
-}
-.loginbox input[type="submit"]:hover
-{
-	cursor: pointer;
-	background: #ffc107;
-	color: #000;
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; }
+#page-wrap { width: 960px; margin: 0 auto; }
+
+h3 { margin: 20px 0 10px 0; }
+
+
+.login-block {
+    float:left;
+    margin:0 49px 25px 0;
+    text-align:center;
+    width:260px;
 }
 
+.login-block form {
+    -moz-border-radius:15px;
+    -moz-box-shadow:0 0 10px #333;
+    -webkit-border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px #333;
+    border:3px solid white;
+    padding:20px;
+}
 
+.login-block .active-form {
+    border-color:#d09e6d;
+}
 
+.login-block form p {
+    margin:0;
+    text-align:left;
+}
 
+.login-block label {
+    color:#7C6767;
+    font-size:14px;
+}
 
+.login-block input[type="text"], .login-block input[type="password"] {
+    border-color:#EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+    border-right:1px solid #CCCCCC;
+    border-style:solid;
+    border-width:1px;
+    font-size:15px;
+    margin:0 0 15px;
+    padding:5px;
+    width:200px;
+}
 
+.login-block a.button {
+    text-decoration:none;
+}
 
-
-
-
-
-
-
-
-
-
+.login-block input[type="text"]:focus, .login-block input[type="password"]:focus {
+    border-color:#555555;
+}
